@@ -33,7 +33,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    padding-right: 20px;
 }
 
 .nav_title img {
@@ -57,7 +56,7 @@ body {
     display: flex;
     justify-content: first baseline ;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .dashboard_vertical_nav .item:hover {
@@ -73,12 +72,124 @@ body {
 
 .dashboard_horizontal_nav {
     grid-column: 2 / 3;
-    border: 5px dotted blue;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); /* Horizontal offset, Vertical offset, Blur radius, Color */
+
+}
+
+/* upper and lower horizontal nav div */
+.dashboard_horizontal_nav div { 
+    height: 50%;
+    background-color: #78716c;
+}
+
+.upper_horizontal_nav {
+    display: grid;
+    grid-template-columns: 3fr 1.7fr;
+    font-size: 20px;
+    color: white;
+}
+
+#search_bar_container.upper_horizontal_nav_item, #name_and_dark_mode.upper_horizontal_nav_item {
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search_bar_container img {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    filter: invert(100%);
+}
+
+#search_bar {
+    border-radius: 10px;
+    width: 500px;
+    height: 20px;
+    padding-left: 10px;
+    background-color: #d6d3d1;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+.dark_mode_button {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 100px;
+    filter: invert(100%);
+}
+
+#name_and_dark_mode span {
+    padding-left: 20px;
+}
+
+.icon_circle {
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower_horizontal_nav {
+    display: grid;
+    grid-template-columns: 3fr 1.7fr;
+    color: white;
+}
+
+#greeting_container.lower_horizontal_nav_item, #project_button_container.lower_horizontal_nav_item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hi_there, .name {
+    font-size: 12px;
+    align-self: start;
+    margin-left: 10px;
+    color: white;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.project_button {
+    width: 85px;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 15px;
+    background-color: #44403c;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.project_button:hover {
+    width: 90px;
+    height: 32px;
+    margin-left: 10px;
 }
 
 .dashboard_projects {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border: 8px dotted green;
+    background-color: #d6d3d1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5 auto);
 }
 

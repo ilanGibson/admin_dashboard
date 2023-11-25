@@ -11,8 +11,8 @@
         <div class="grid">
             <div class="dashboard_vertical_nav">
                 <div class="nav_title">
-                    <img src="./images/account-hard-hat-outline.svg">
-                    <span>Dashboard</span>
+                    <img src="./images/human-greeting.svg">
+                    <span>Welcome</span>
                 </div>
                 <div class="item_container">
                     <div class="item" id="home">
@@ -31,9 +31,9 @@
                         <img src="./images/checkbox-marked-circle-plus-outline.svg">
                         <span>Tasks</span>
                     </div>
-                    <div class="item" id="temp">
-                        <img src="./images/thermometer.svg">
-                        <span>Temp</span>
+                    <div class="item" id="about_me">
+                        <img src="./images/information.svg">
+                        <span>About Me</span>
                     </div>
                     <div class="item" id="temp">
                         <img src="./images/thermometer.svg">
@@ -55,7 +55,39 @@
                     </div>
                 </div>
             </div> 
-            <div class="dashboard_horizontal_nav"></div>
+            <div class="dashboard_horizontal_nav">
+                <div class="upper_horizontal_nav">
+                    <div class="upper_horizontal_nav_item" id="search_bar_container">
+                        <a href="#" class="search_button">
+                            <img src="./images/magnify.svg">
+                        </a>
+                        <form>
+                            <input type="text" id="search_bar" name="q">
+                        </form>
+                    </div>
+                    <div class="upper_horizontal_nav_item" id="name_and_dark_mode">
+                        <a href="#" class="dark_mode_button">
+                            <img src="./images/brightness-6.svg">
+                        </a>
+                        <div class="icon_circle">+</div>
+                        <span>Ilan Gibson</span>
+                    </div>
+                </div>
+                <div class="lower_horizontal_nav">
+                    <div class="lower_horizontal_nav_item" id="greeting_container">
+                        <div class="icon_circle">+</div>
+                        <div class="greeting">
+                            <span class="hi_there">Hi there,</span>
+                            <span class="name">Ilan Gibson (@ilanGibson)</span>
+                        </div>
+                    </div>
+                    <div class="lower_horizontal_nav_item" id="project_button_container">
+                        <button class="project_button" id="new_button">New</button>
+                        <button class="project_button" id="upload_button">Upload</button>
+                        <button class="project_button" id="share">Share</button>
+                    </div>
+                </div>
+            </div>
             <div class="dashboard_projects"></div>
         </div>
     </div>
